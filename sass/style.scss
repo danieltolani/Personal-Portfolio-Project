@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;700;800&family=Montserrat:wght@600;700;800&family=PT+Sans:wght@400;700&display=swap');
 
-$yellow: linear-gradient(35deg,#ffcf21,#fcc910);
-$purple-gradient: linear-gradient(105deg,#22162c,#12051c);
+$secondary-color: #e7ab54;
+$purple-gradient: #01090e;
 $dark-purple: #12051c;
 
 *{
@@ -20,6 +20,7 @@ $dark-purple: #12051c;
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    background-image: (s);
 }
 
 .container{
@@ -49,12 +50,20 @@ nav#navbar{
 
         li{
             list-style: none;
-            margin: 0px 40px ;
+            margin: 0px 30px ;
+            align-self: center;
+            margin-right: 0;
         }
         a[href]{
             text-decoration: none;
             font-size: 1.8rem;
             color: white;
+        }
+        .brand-logo{
+            max-width: 100%;
+            width: 80px;
+            align-self: center;
+            margin-right: auto;
         }
     }
 }
@@ -65,7 +74,7 @@ a.main-button{
     text-align: center;
     text-decoration: none;
     color: $dark-purple;
-    background: $yellow;
+    background: $secondary-color;
     transition: all 0.3s ease-out;
     font-size: 1.4rem;
 
@@ -79,6 +88,7 @@ a.main-button{
     margin-top: 20px;
     width: 120px;
 }
+
 
 section#welcome-section{
     padding-left: 60px;
@@ -96,7 +106,7 @@ section#welcome-section{
     .far{
         font-weight: lighter;
         font-size: 3rem;
-        color: #97929b;
+        color: #e7ab54;
     }
 
 }
@@ -273,6 +283,12 @@ section#contact{
                 font-size: 1.6rem !important;
                 font-family: 'Montserrat';
             }
+            // .brand-logo{
+            //     border: 2px solid red;
+            //     max-width: 100%;
+            //     width: 80px;
+            //     align-self: center;
+            // }
         }
     }
     a.main-button{
