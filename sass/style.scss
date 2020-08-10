@@ -47,12 +47,10 @@ nav#navbar{
     ul.nav-list{
         display: flex;
         justify-content: center;
-        border: 2px solid red;
 
 
         .nav-links{
             display: flex;
-            border: 2px solid red;
             li{
                 list-style: none;
                 margin: 0px 30px ;
@@ -260,7 +258,13 @@ section#contact{
             flex-direction: column;
 
             .brand-logo{
-                margin: 1.4rem auto;
+                margin: 1.4em auto;
+            }
+            .nav-links{
+                margin: 0 auto;
+                li{
+                    margin: 0 2em 0 2em;
+                }
             }
         }
     }
