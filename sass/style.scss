@@ -47,18 +47,25 @@ nav#navbar{
     ul.nav-list{
         display: flex;
         justify-content: center;
+        border: 2px solid red;
 
-        li{
-            list-style: none;
-            margin: 0px 30px ;
-            align-self: center;
-            margin-right: 0;
+
+        .nav-links{
+            display: flex;
+            border: 2px solid red;
+            li{
+                list-style: none;
+                margin: 0px 30px ;
+                align-self: center;
+                margin-right: 0;
+            }
+            a[href]{
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: white;
+            }
         }
-        a[href]{
-            text-decoration: none;
-            font-size: 1.8rem;
-            color: white;
-        }
+        
         .brand-logo{
             max-width: 100%;
             width: 80px;
@@ -247,6 +254,16 @@ section#contact{
 }
 
 @media screen and (max-width: 575px){
+    nav#navbar{
+        ul.nav-list{
+            display: flex;
+            flex-direction: column;
+
+            .brand-logo{
+                margin: 1.4rem auto;
+            }
+        }
+    }
     section#welcome-section{
         text-align: center;
         padding-left: 0px !important;
