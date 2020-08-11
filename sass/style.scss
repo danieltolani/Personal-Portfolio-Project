@@ -118,7 +118,7 @@ section#welcome-section{
 section.projects-section{
     position: relative;
     text-align: center;
-    background: #27b2d2;
+    background: $purple-gradient;
     place-items: center !important;
     
     .fa-bolt{
