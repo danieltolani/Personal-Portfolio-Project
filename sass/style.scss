@@ -27,6 +27,9 @@ html{
     background: $purple-gradient;
     color: white;
     position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .fas{
@@ -96,9 +99,9 @@ a.main-button{
 
 
 section#welcome-section{
-    padding-left: 60px;
+    padding-left: 12em;
     width: 100%;
-    height: 100vh;
+    margin: auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
