@@ -20,7 +20,6 @@ $dark-purple: #12051c;
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-image: (s);
 }
 
 .container{
@@ -44,16 +43,18 @@ nav#navbar{
     display: block;
     width: 100%;
     padding: 20px 50px;
+    border: 2px solid red;
     ul.nav-list{
         display: flex;
         justify-content: center;
-
+        border: 2px solid red;
 
         .nav-links{
             display: flex;
+            border: 2px solid red;
             li{
                 list-style: none;
-                margin: 0px 30px ;
+                margin: 0px 30px;
                 align-self: center;
                 margin-right: 0;
             }
