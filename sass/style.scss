@@ -9,8 +9,7 @@ $dark-purple: #12051c;
     margin: 0;
     box-sizing: border-box;
     font-size: 10px;
-    font-family: 'Catamaran', sans-serif;
-    // font-family: 'PT Sans', sans-serif;
+    font-family: 'MonumentExtended-Regular', sans-serif;
 }
 *,
 *::before,
@@ -20,7 +19,15 @@ $dark-purple: #12051c;
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-image: (s);
+}
+
+@font-face {
+    font-family: 'MonumentExtended-Regular';
+    src:url('../src/font/MonumentExtended-Regular.otf') format('otf'),
+        url('../src/font/MonumentExtended-Regular.otf') format('truetype');   
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .container{
@@ -39,7 +46,7 @@ html{
 }
 
 .fab, .fa-phone, .fa-inbox{
-    font-size: 2rem;
+    font-size: 2em;
     margin-right: 10px;
 }
 
@@ -62,7 +69,7 @@ nav#navbar{
             }
             a[href]{
                 text-decoration: none;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 color: white;
             }
         }
@@ -85,6 +92,7 @@ a.main-button{
     background: $secondary-color;
     transition: all 0.3s ease-out;
     font-size: 1.4rem;
+    
 
     &:hover{
         transform: scale(.94);
@@ -93,8 +101,9 @@ a.main-button{
     }
 }
 #hire{
-    margin-top: 20px;
-    width: 120px;
+    margin-top: 2em;
+    padding: 1.2em 10px;
+    width: 150px;
 }
 
 
@@ -107,7 +116,7 @@ section#welcome-section{
     justify-content: center;
 
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 6rem;
         font-weight: 500;
     }
@@ -317,6 +326,7 @@ section#contact{
     }
     a.main-button{
         padding: 6px 18px !important;
+        
     }
     #hire{
         margin-top: 20px;
